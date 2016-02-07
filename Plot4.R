@@ -40,7 +40,8 @@ lines(powerData$DateProper, powerData$Sub_metering_1, col="black")
 lines(powerData$DateProper, powerData$Sub_metering_2, col="red")
 lines(powerData$DateProper, powerData$Sub_metering_3, col="blue")
 
-legend("topright", col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lty=1)
+legend("topright", col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), 
+       lty=1, bty="n")
 
 #Plot 3
 with(powerData, plot(DateProper, Voltage, type="n", xlab="datetime", ylab="Voltage"))
